@@ -29,8 +29,8 @@ Both Screenshots of the Desktop and Mobile Versions added to the project main fo
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://github.com/JoaoF137/Advice-generator-app
+- Live Site URL: https://advice-generator-app-eosin-beta.vercel.app/
 
 ## My process
 
