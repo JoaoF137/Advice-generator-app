@@ -1,0 +1,121 @@
+:root {
+    --light-cyan: hsl(193, 38%, 86%);
+    --neon-green: hsl(150, 100%, 66%);
+    --grayish-blue: hsl(217, 19%, 24%);
+    --dark-grayish-blue: hsl(218, 23%, 16%);
+
+}
+
+
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--dark-grayish-blue);
+    font-family: 'Manrope', sans-serif;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 7em;
+}
+
+.cardAdvice {
+    background-color: var(--grayish-blue);
+    min-height: 12em;
+    width: 20em;
+    border-radius: 0.5em;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.attribution {
+    font-size: 0.8rem;
+    text-align: center;
+    color: var(--light-cyan);
+    margin-top:3em;
+}
+
+.attribution a {
+    color: var(--neon-green);
+}
+
+.cardAdvice p {
+    color: var(--neon-green);
+    text-align: center;
+    padding: 0.8em;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+.cardAdvice #adviceText {
+    color: var(--light-cyan);
+    text-align: center;
+    padding: 0.8em;
+    font-size: 1.5rem;
+}
+
+.cardAdvice {
+    position: relative;
+}
+
+.dice {
+    background-color: var(--neon-green);
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    bottom: -1.0em;
+    cursor: pointer;
+  &:hover {
+    box-shadow: 0 0 10px var(--neon-green);
+}}
+
+
+.divider {
+    margin-top:1em;
+    margin-bottom:2em;
+    display: flex;
+    justify-content: center;
+}
+
+.divider img {
+    max-width: 90%;
+
+}
+
+
+    /* Small devices (landscape phones, less than 640px) */
+    @media (max-width:640px) {
+        .cardAdvice  {
+            width: 80%;
+            min-width: 10em;
+            height: 70%;
+            min-height: 8em;
+        }
+
+    } 
+    
+    /* Medium devices (tablets) */
+    @media (min-width: 641px) and (max-width: 1023px) {
+
+        .card,.cardRatingSubmit {
+            height: 80%;
+            width: 90%;
+            max-width: 20em;
+            min-height: 12em;        
+        }
+        
+    }
